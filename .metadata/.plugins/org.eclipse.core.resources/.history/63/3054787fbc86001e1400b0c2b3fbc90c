@@ -1,0 +1,8 @@
+
+public class BasicMultiThreading 
+{
+	public static void main(String [] args) 
+	{
+		
+	}
+}

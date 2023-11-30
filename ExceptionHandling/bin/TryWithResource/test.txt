@@ -1,0 +1,3 @@
+This is A FIle Which is created to check the Try With resource
+Try With Resource is used for Automatically Closing the Resource.
+This implements A interface AutoClosable 

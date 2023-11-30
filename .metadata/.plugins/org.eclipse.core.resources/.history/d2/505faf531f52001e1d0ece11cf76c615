@@ -1,0 +1,9 @@
+
+abstract class Animal{
+	abstract void walkAnimal();
+}
+
+
+public class MainAnimal {
+
+}

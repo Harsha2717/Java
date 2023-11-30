@@ -1,0 +1,21 @@
+
+public class Animal {
+	void makesound() 
+	{
+		System.out.println("Animal Barks");
+	}
+class Dog extends Animal
+{
+	void makesound() 
+	{
+		System.out.println("Dog Barks");
+	}
+}
+public static void main(String [] args) 
+{
+	Animal animal = new Animal();
+	Animal doggy = new Animal$Dog();
+	animal.makesound();
+	doggy.makesound();
+}
+}

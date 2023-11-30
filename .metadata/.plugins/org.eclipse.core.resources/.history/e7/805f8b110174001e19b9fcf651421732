@@ -1,0 +1,50 @@
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
+import java.awt.Font;
+
+public class Solution {
+    public static void createAndShowGUI() {
+        // Create a JFrame (window)
+        JFrame frame = new JFrame("Full Screen Image Swing GUI Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        // Create a JLabel for the image
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\Harsha\\Desktop\\\\Jaanu.jpg"); // Replace with the path to your image file
+        JLabel imageLabel = new JLabel(imageIcon);
+        
+        // Set the layout manager to null for custom positioning
+        frame.setLayout(null);
+        
+        // Get the width and height of the frame
+        int frameWidth = frame.getWidth();
+        int frameHeight = frame.getHeight();
+        
+        // Set the bounds of the image label to cover the full frame
+        imageLabel.setBounds(0, 0, frameWidth, frameHeight);
+        
+        // Increase the font size for the text
+        Font largerFont = new Font("SansSerif", Font.PLAIN, 24);
+        JLabel textLabel = new JLabel("Hello, World!");
+        textLabel.setFont(largerFont);
+        textLabel.setBounds(50, 50, 200, 40); // Adjust position as needed
+        
+        // Add the image and text labels to the frame
+        frame.add(imageLabel);
+        frame.add(textLabel);
+        
+        // Set the size and make the frame visible
+        frame.setSize(800, 600); // Adjust the frame size as needed
+        frame.setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                createAndShowGUI();
+            }
+        });
+    }
+}
+

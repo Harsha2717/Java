@@ -1,0 +1,82 @@
+package Graphs.AdjacencyList;
+class Nodes
+{
+	int data;
+	Nodes (int data)
+	{
+		this.data = data;
+	}
+}
+class Graphs
+{
+	int [][] matrix ;
+	Graphs(int size)
+	{
+		matrix = new int[size][size];
+	}
+	public void addEdge(int src,int dstn,int value) 
+	{
+		matrix[src][dstn]=value;
+	}
+	public void print() 
+	{
+		for(int i=0;i<matrix.length;i++) 
+		{
+			for(int j=0;j<matrix[i].length;j++) 
+			{
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+}
+public class prac
+{
+	public static void main(String [] args) 
+	{
+		Graphs graph = new Graphs(3);
+		graph.addEdge(0, 0, 2);
+		graph.addEdge(0, 1, 1);
+		graph.addEdge(0, 2, 1);
+		graph.addEdge(1, 0, 1);
+		graph.addEdge(1, 1, 1);
+		graph.addEdge(1, 2, 0);
+		graph.addEdge(2, 0, 0);
+		graph.addEdge(2, 1, 1);
+		graph.addEdge(2, 2, 1);
+		graph.print();
+		
+		for(int i=0;i<graph.matrix.length;i++) 
+		{
+			for(int j=0;j<graph.matrix[i].length-1;j++) 
+			{
+				if(graph.matrix[i][j] == 2) 
+				{
+					if(i == 0 && j == 0) 
+					{
+						if(graph.matrix[i+1][j] == 1) 
+						{
+							graph.matrix[i+1][j] = 2;
+							
+						}
+						if(graph.matrix[i][j+1] == 1)
+						{
+							graph.matrix[i][j+1] = 2;
+						}
+					}else 
+					{
+						if(i==0) 
+						{
+							if(graph.matrix[i][j+1] == 1) 
+							{
+								graph.matrix[i][j+1] = 2;
+							}
+						}
+					}
+				}
+			}
+		}
+		System.out.println("==== After ====");
+		graph.print();
+	}
+}

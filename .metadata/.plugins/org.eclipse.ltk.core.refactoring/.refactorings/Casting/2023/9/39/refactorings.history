@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;TypeCasting&apos; to &apos;TypeCasting_and_Conversion&apos;&#x0D;&#x0A;- Original project: &apos;Casting&apos;&#x0D;&#x0A;- Original element: &apos;TypeCasting&apos;&#x0D;&#x0A;- Renamed element: &apos;TypeCasting_and_Conversion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TypeCasting&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{TypeCasting.java[TypeCasting" matchStrategy="1" name="TypeCasting_and_Conversion" qualified="false" references="true" similarDeclarations="false" stamp="1695644724979" textual="false" version="1.0"/>
+</session>

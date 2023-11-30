@@ -1,0 +1,22 @@
+class Multi extends Thread
+{
+	public void run()
+	{		
+		for(int i=0;i<10;i++) 
+		{
+			System.out.println("Hi");
+			try 
+			{
+				Thread.sleep(200);
+			}
+		}
+	}
+}
+
+public class BasicMultiThreading 
+{
+	public static void main(String [] args) 
+	{
+		
+	}
+}

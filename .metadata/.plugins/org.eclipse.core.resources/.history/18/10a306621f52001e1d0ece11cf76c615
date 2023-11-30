@@ -1,0 +1,13 @@
+
+abstract class Animal{
+	abstract void walkAnimal();
+	public void display() 
+	{
+		
+	}
+}
+
+
+public class MainAnimal {
+
+}

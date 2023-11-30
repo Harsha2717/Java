@@ -1,0 +1,14 @@
+
+abstract class Animal{
+	abstract void walkAnimal();
+	
+	public void display() 
+	{
+		System.out.println("Display Data");
+	}
+}
+
+
+public class MainAnimal {
+
+}

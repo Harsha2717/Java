@@ -1,0 +1,34 @@
+
+/*
+ * The MultiThreading is a Process a Multiple Executions of a Thread takes place on a Single resource
+ * and every Thread runs at same Time
+ */
+class Runner extends Thread
+{
+	public void run()
+	{		
+		for(int i=0;i<10;i++) 
+		{
+			System.out.println("Hi " + i);
+			try 
+			{
+				Thread.sleep(300);
+			} 
+			catch (InterruptedException e) 
+			{
+				e.getMessage();
+			}
+		}
+	}
+}
+
+public class BasicMultiThreading 
+{
+	public static void main(String [] args) 
+	{
+		Runner run = new Runner();
+		run.start();
+		Runner run1 = new Runner();
+		run1.start();
+	}
+}

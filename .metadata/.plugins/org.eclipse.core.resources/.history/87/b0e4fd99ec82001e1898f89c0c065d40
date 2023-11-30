@@ -1,0 +1,8 @@
+package Graphs.AdjacencyList;
+public class prac
+{
+	public static void main(String [] args) 
+	{
+		 HashTable<Integer,String> hash = new HashTable<>();
+	}
+}

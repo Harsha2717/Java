@@ -1,0 +1,15 @@
+package LIST;
+import java.util.LinkedList;
+
+public class LinkedListClass {
+	public static void main(String [] args) 
+	{
+		LinkedList<String> list = new LinkedList<String>();
+		
+		list.addFirst("Harsha");
+		list.add(list.size(),"Null");
+		list.addLast("jaanu");
+		System.out.println(list);
+		
+	}
+}

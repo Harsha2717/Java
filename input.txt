@@ -1,0 +1,3 @@
+This is a sample sentence with several words.
+Each word should be counted.
+The total word count is important.
